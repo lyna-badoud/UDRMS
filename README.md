@@ -87,4 +87,4 @@ This project uses CMake and Qt. To build:
 
 ## Author
 
-LYna Badoud — AI Engineering student, ENSIA, 2025-2026 
+Lyna Badoud — AI Engineering student, ENSIA, 2025-2026 
