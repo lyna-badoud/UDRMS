@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>image/ENSIA_png.jpg</file>
+    </qresource>
+</RCC>

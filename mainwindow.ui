@@ -1,0 +1,2108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #E3F2FD;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="lblYearStatic">
+    <property name="geometry">
+     <rect>
+      <x>-190</x>
+      <y>-30</y>
+      <width>1071</width>
+      <height>941</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #0f1b2d;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="loginPage">
+     <property name="styleSheet">
+      <string notr="true">background-color: #1a1a2e;</string>
+     </property>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>130</y>
+        <width>501</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #16213e;
+border-radius: 15px;
+border: 1px solid #0f3460;
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>10</y>
+         <width>191</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font-size: 24px;
+font-weight: bold;
+background-color: transparent;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>        UDRMS</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>50</y>
+         <width>331</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #a0aec0;
+font-size: 13px;
+background-color: transparent;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>           University Dormitory Management System</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="usernameEdit">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>110</y>
+         <width>181</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #0f3460;
+color: white;
+border-radius: 8px;
+border: 1px solid #e94560;
+padding: 5px;
+font-size: 13px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="passwordEdit">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>170</y>
+         <width>181</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #0f3460;
+color: white;
+border-radius: 8px;
+border: 1px solid #e94560;
+padding: 5px;
+font-size: 13px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnLogin">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>250</y>
+         <width>101</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #e94560;
+color: white;
+border-radius: 8px;
+border: none;
+font-size: 14px;
+font-weight: bold;
+padding: 8px;</string>
+       </property>
+       <property name="text">
+        <string>Login</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>20</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/image/image/ENSIA_png.jpg);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>110</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font-size: 14px;
+</string>
+       </property>
+       <property name="text">
+        <string>   Username :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>170</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font-size: 14px;</string>
+       </property>
+       <property name="text">
+        <string>   Student ID :</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="dashboardPage">
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>60</y>
+        <width>251</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1a2a4a;
+border-radius: 0px;
+border: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="btnHome">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Home</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnDormitories">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>230</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Dormitories</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnStudents">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>140</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Students</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRestaurant">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>320</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Restuarent</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnLogout">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>410</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Logout</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>80</y>
+        <width>411</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-size: 24px;
+font-weight: bold;
+background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string>     Welcome !</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>130</y>
+        <width>361</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #a0b4c8;
+font-size: 14px;
+font-style: italic;
+background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string>     A place where every student finds their home</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>250</y>
+        <width>131</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1a2a4a;
+border-radius: 12px;
+border: none;
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: transparent;
+font-size: 14px;
+</string>
+       </property>
+       <property name="text">
+        <string>  Total Students</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblTotalStudents">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>63</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: transparent;
+font-size: 14px;
+</string>
+       </property>
+       <property name="text">
+        <string>      0</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_5">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>250</y>
+        <width>131</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1a2a4a;
+border-radius: 12px;
+border: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: transparent;
+font-size: 14px;
+</string>
+       </property>
+       <property name="text">
+        <string>  Total Rooms</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblTotalRooms">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>63</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: transparent;
+font-size: 14px;
+</string>
+       </property>
+       <property name="text">
+        <string>       0</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_4">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>250</y>
+        <width>131</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1a2a4a;
+border-radius: 12px;
+border: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: transparent;
+font-size: 14px;
+</string>
+       </property>
+       <property name="text">
+        <string>Total Dormitories</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblTotalDormitories">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>63</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: transparent;
+font-size: 14px;
+</string>
+       </property>
+       <property name="text">
+        <string>       0</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="studentsPage">
+     <widget class="QFrame" name="frame_6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>60</y>
+        <width>251</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1a2a4a;
+border-radius: 0px;
+border: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="btnHome2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Home</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnDormitories2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>230</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Dormitories</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnStudents2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>140</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Students</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRestaurant2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>320</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Restuarent</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnLogout2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>410</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Logout</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="studentsTable">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>110</y>
+        <width>491</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {
+    background-color: #1a2a4a;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    gridline-color: #2d4a7a;
+}
+QHeaderView::section {
+    background-color: #2d4a7a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+}</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Year</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Dormitory</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Room</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>60</y>
+        <width>351</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-size: 22px;
+font-weight: bold;
+background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string>                      Students :</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnRemoveStudent2">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>520</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e8445a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 8px;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>Remove student</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAddStudent2">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>520</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e8445a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 8px;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>Add student</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="studentViewPage">
+     <widget class="QLabel" name="lblStudentWelcome">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>50</y>
+        <width>251</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+    font-size: 20px;
+    font-weight: bold;
+ padding: 8px 0px;
+border: none;
+ background: transparent;</string>
+      </property>
+      <property name="text">
+       <string>            Welcome :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblInfoTitle&#10;">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>120</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>       Your information :</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_9">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>170</y>
+        <width>421</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #16243a;
+    border-radius: 12px;
+    border: 1px solid #2a3f54;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="lblNameStatic">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>40</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+    background: transparent;
+    color: white;
+    font-size: 13px;</string>
+       </property>
+       <property name="text">
+        <string>Name :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblStudentName">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>30</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+    background-color: #1d3557;
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 6px 12px;</string>
+       </property>
+       <property name="text">
+        <string>lyna</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblStudentId">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>80</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+    background-color: #1d3557;
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 6px 12px;</string>
+       </property>
+       <property name="text">
+        <string>12345</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblStudentYear">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>130</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+    background-color: #1d3557;
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 6px 12px;</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblStudentDormitory">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>180</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+    background-color: #1d3557;
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 6px 12px;</string>
+       </property>
+       <property name="text">
+        <string>maalma4</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblStudentRoom">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>230</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+    background-color: #1d3557;
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 6px 12px;</string>
+       </property>
+       <property name="text">
+        <string>34</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblIdStatic">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>90</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+    background: transparent;
+    color: white;
+    font-size: 13px;</string>
+       </property>
+       <property name="text">
+        <string>ID :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblYearStatic_2">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>140</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+    background: transparent;
+    color: white;
+    font-size: 13px;</string>
+       </property>
+       <property name="text">
+        <string>Year :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblDormitoryStatic">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>180</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+    background: transparent;
+    color: white;
+    font-size: 13px;</string>
+       </property>
+       <property name="text">
+        <string>Dormitory :</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblRoomStatic">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>230</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+    background: transparent;
+    color: white;
+    font-size: 13px;</string>
+       </property>
+       <property name="text">
+        <string>Room :</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btnLogoutStudent">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>490</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e8445a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 8px;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>Logout</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnViewMenu">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>490</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e8445a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 8px;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>View Menu</string>
+      </property>
+     </widget>
+     <zorder>frame_9</zorder>
+     <zorder>lblStudentWelcome</zorder>
+     <zorder>lblInfoTitle
+</zorder>
+     <zorder>btnLogoutStudent</zorder>
+     <zorder>btnViewMenu</zorder>
+    </widget>
+    <widget class="QWidget" name="studentMenuPage">
+     <widget class="QLabel" name="lblMenuTitle">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>90</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>       View Menu  :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblMenuBreakfast">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>200</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>       Breakfast :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblMenuBreakfast1">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>190</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #a0b4c8;
+font-size: 16px;
+font-style: italic;
+background-color: #1a2a4a;
+border-radius: 8px;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblMenuLunch1">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>260</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #a0b4c8;
+font-size: 16px;
+font-style: italic;
+background-color: #1a2a4a;
+border-radius: 8px;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblMenuDinner">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>340</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>         Dinner :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblMenuDinner1">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>330</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #a0b4c8;
+font-size: 16px;
+font-style: italic;
+background-color: #1a2a4a;
+border-radius: 8px;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_10">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>160</y>
+        <width>411</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #16243a;
+    border-radius: 12px;
+    border: 1px solid #2a3f54;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QLabel" name="lblMenuLunch">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>110</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;</string>
+       </property>
+       <property name="text">
+        <string>          Lunch :</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btnViewStudent">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>470</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e8445a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 8px;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>View Student</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnLogoutStudentMenu">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>470</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e8445a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 8px;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>Logout</string>
+      </property>
+     </widget>
+     <zorder>frame_10</zorder>
+     <zorder>lblMenuTitle</zorder>
+     <zorder>lblMenuBreakfast</zorder>
+     <zorder>lblMenuBreakfast1</zorder>
+     <zorder>lblMenuLunch1</zorder>
+     <zorder>lblMenuDinner</zorder>
+     <zorder>lblMenuDinner1</zorder>
+     <zorder>btnViewStudent</zorder>
+     <zorder>btnLogoutStudentMenu</zorder>
+    </widget>
+    <widget class="QWidget" name="dormitoriesPage">
+     <widget class="QFrame" name="frame_7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>60</y>
+        <width>251</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1a2a4a;
+border-radius: 0px;
+border: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="btnHome3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Home</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnDormitories3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>230</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Dormitories</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnStudents3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>140</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Students</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRestaurant3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>320</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Restuarent</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnLogout3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>410</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Logout</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>60</y>
+        <width>351</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-size: 22px;
+font-weight: bold;
+background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string>                   Dormitories :</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="dormitoriesTable">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>100</y>
+        <width>481</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {
+    background-color: #1a2a4a;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    gridline-color: #2d4a7a;
+}
+QHeaderView::section {
+    background-color: #2d4a7a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+}</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Capacity</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Rooms</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Students</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="btnAddDormitory2">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>510</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e8445a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 8px;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>Add dormitory</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnRemoveDormitory2">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>510</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e8445a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 8px;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>Remove dormitory</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnViewRooms">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>510</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e8445a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 8px;
+border: none;</string>
+      </property>
+      <property name="text">
+       <string>View Rooms</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="roomsPage">
+     <widget class="QLabel" name="lblRoomsTitle">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>70</y>
+        <width>351</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-size: 22px;
+font-weight: bold;
+background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string>Rooms in [Dormitory]:</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="roomsTable">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>130</y>
+        <width>481</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {
+    background-color: #1a2a4a;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    gridline-color: #2d4a7a;
+}
+QHeaderView::section {
+    background-color: #2d4a7a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+}</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>Room number</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Capacity</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Occupied</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Status</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QFrame" name="frame_11">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>60</y>
+        <width>251</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1a2a4a;
+border-radius: 0px;
+border: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="btnHome5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Home</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnDormitories5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>230</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Dormitories</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnStudents5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>140</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Students</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRestaurant5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>320</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Restuarent</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnLogout5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>410</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Logout</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="restaurentPage">
+     <widget class="QFrame" name="frame_8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>60</y>
+        <width>251</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1a2a4a;
+border-radius: 0px;
+border: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="btnHome4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>50</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Home</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnDormitories4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>230</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Dormitories</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnStudents4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>140</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Students</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRestaurant4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>320</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Restuarent</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnLogout4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>410</y>
+         <width>181</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #2d4a7a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 10px;
+border: none;</string>
+       </property>
+       <property name="text">
+        <string>Logout</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>70</y>
+        <width>351</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-size: 22px;
+font-weight: bold;
+background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string>                   Restaurant:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>250</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-size: 16px;
+background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string>       Breakfast :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>310</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-size: 16px;
+background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string>          Lunch :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>370</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-size: 16px;
+background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string>         Dinner :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBreakfast">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>240</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #a0b4c8;
+font-size: 16px;
+font-style: italic;
+background-color: #1a2a4a;
+border-radius: 8px;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblLunch">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>300</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #a0b4c8;
+font-size: 16px;
+font-style: italic;
+background-color: #1a2a4a;
+border-radius: 8px;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblDinner">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>360</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #a0b4c8;
+font-size: 16px;
+font-style: italic;
+background-color: #1a2a4a;
+border-radius: 8px;
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnUpdateMenu">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>510</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e8445a;
+color: white;
+border-radius: 8px;
+font-size: 14px;
+padding: 8px;
+border: none;
+</string>
+      </property>
+      <property name="text">
+       <string>Update Menu</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="dormitorySelector">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>140</y>
+        <width>82</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #1a2a4a;
+color: white;
+border-radius: 8px;
+border: 1px solid #2d4a7a;
+padding: 5px;
+font-size: 14px;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>140</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white;
+font-size: 16px;
+background-color: transparent;
+</string>
+      </property>
+      <property name="text">
+       <string>     Select a dormitory:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <action name="actionWelcome_to_UDRMS">
+   <property name="text">
+    <string>Welcome to UDRMS</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
